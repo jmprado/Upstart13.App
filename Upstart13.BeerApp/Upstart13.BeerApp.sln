@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.WebApi", "Upstart13.BeerApp.WebApi\Upstart13.BeerApp.WebApi.csproj", "{34606F22-E9F6-4BB1-BF7D-77D20C866493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Entities", "Upstart13.BeerApp.Entities\Upstart13.BeerApp.Entities.csproj", "{1331B914-5115-49D4-9804-571F4EB1481D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Mapping", "Upstart13.BeerApp.Mapping\Upstart13.BeerApp.Mapping.csproj", "{DF772F5D-7C8B-48E2-8D37-621824D7CDCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Dal", "Upstart13.BeerApp.Dal\Upstart13.BeerApp.Dal.csproj", "{68F54C23-562F-4862-865E-7F1BBEF90DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstart13.BeerApp.ViewModel", "Upstart13.BeerApp.ViewModel\Upstart13.BeerApp.ViewModel.csproj", "{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstart13.BeerApp.Domain", "Upstart13.BeerApp.Domain\Upstart13.BeerApp.Domain.csproj", "{6E948E6B-556E-47BA-8868-4FD0545C6682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34606F22-E9F6-4BB1-BF7D-77D20C866493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34606F22-E9F6-4BB1-BF7D-77D20C866493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34606F22-E9F6-4BB1-BF7D-77D20C866493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34606F22-E9F6-4BB1-BF7D-77D20C866493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1331B914-5115-49D4-9804-571F4EB1481D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1331B914-5115-49D4-9804-571F4EB1481D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1331B914-5115-49D4-9804-571F4EB1481D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1331B914-5115-49D4-9804-571F4EB1481D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF772F5D-7C8B-48E2-8D37-621824D7CDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF772F5D-7C8B-48E2-8D37-621824D7CDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF772F5D-7C8B-48E2-8D37-621824D7CDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF772F5D-7C8B-48E2-8D37-621824D7CDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F54C23-562F-4862-865E-7F1BBEF90DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F54C23-562F-4862-865E-7F1BBEF90DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F54C23-562F-4862-865E-7F1BBEF90DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F54C23-562F-4862-865E-7F1BBEF90DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAE5E52F-2D68-4BFC-AB46-2CBFCF66E9F4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,76 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "Upstart13beerappContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProceduresReturnList": false,
+   "ProjectRootNamespace": "Upstart13.BeerApp.Entities",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AmountUnit]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Beer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FoodPairing]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Ingredient]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[IngredientType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Method]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MethodType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TemperatureUnit]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Volume]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[VolumeType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[VolumeUnit]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "NBSTI308396\\SQLEXPRESS2.Upstart13BeerApp",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSpatial": false
+}
