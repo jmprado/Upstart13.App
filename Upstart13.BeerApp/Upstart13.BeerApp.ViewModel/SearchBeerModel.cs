@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Upstart13.BeerApp.ViewModel
+﻿namespace Upstart13.BeerApp.ViewModel
 {
     public class SearchBeerModel
     {

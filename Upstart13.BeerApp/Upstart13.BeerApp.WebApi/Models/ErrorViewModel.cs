@@ -1,5 +1,3 @@
-using System;
-
 namespace Upstart13.BeerApp.WebApi.Models
 {
     public class ErrorViewModel

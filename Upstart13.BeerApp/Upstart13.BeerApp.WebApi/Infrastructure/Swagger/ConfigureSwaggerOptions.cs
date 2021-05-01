@@ -35,10 +35,10 @@ namespace Upstart13.BeerApp.Infrastructure.Swagger
         {
             var info = new OpenApiInfo()
             {
-                Title = "Cool Web API",
+                Title = "Upstart13 Beer Api",
                 Version = description.ApiVersion.ToString(),
-                Description = "A Cool Web API Sample.",
-                Contact = new OpenApiContact { Name = "Mosi Esmailpour", Email = "mo.esmp@gmail.com" },
+                Description = "The task from Upstart13.",
+                Contact = new OpenApiContact { Name = "Joao Prado", Email = "joaoprado@magix.net.br" },
                 License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
             };
 

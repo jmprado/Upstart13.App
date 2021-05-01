@@ -1,10 +1,9 @@
-﻿using System;
+﻿using EFCore.BulkExtensions;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using Upstart13.BeerApp.Entities;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
 
 namespace Upstart13.BeerApp.Dal
 {
@@ -54,6 +53,14 @@ namespace Upstart13.BeerApp.Dal
                 var beerToDelete = await GetAsync(id);
                 dbContext.Beer.Remove(beerToDelete);
                 await dbContext.SaveChangesAsync();
+            }
+        }
+
+        public async Task ImportAsync(IEnumerable<Beer> beerList)
+        {
+            using (var dbContext = new Upstart13beerappContext())
+            {
+                await dbContext.BulkInsertOrUpdateAsync(beerList.ToList());
             }
         }
     }

@@ -1,5 +1,5 @@
-﻿using Upstart13.BeerApp.Infrastructure.Middlewares;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
+using Upstart13.BeerApp.Infrastructure.Middlewares;
 
 namespace Upstart13.BeerApp.Extensions
 {

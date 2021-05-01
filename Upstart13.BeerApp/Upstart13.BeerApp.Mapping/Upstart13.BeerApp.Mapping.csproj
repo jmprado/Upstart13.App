@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Upstart13.BeerApp.Entities\Upstart13.BeerApp.Entities.csproj" />
+    <ProjectReference Include="..\Upstart13.BeerApp.ViewModel\Upstart13.BeerApp.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

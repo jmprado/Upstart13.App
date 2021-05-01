@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using System;
+using Upstart13.BeerApp.Entities;
+using Upstart13.BeerApp.ViewModel;
 
 namespace Upstart13.BeerApp.Mapping
 {
@@ -7,7 +8,7 @@ namespace Upstart13.BeerApp.Mapping
     {
         public AutomapperProfile()
         {
-
+            CreateMap<BeerModel, Beer>().ReverseMap();
 
         }
     }

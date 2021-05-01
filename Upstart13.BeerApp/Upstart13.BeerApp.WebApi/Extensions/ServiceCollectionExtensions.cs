@@ -1,8 +1,7 @@
-﻿using Upstart13.BeerApp.Infrastructure.HttpClients;
-using Upstart13.BeerApp.Infrastructure.Swagger;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -18,7 +17,8 @@ using System.Reflection;
 using Upstart13.BeerApp.Dal;
 using Upstart13.BeerApp.Domain;
 using Upstart13.BeerApp.Entities;
-using Microsoft.EntityFrameworkCore;
+using Upstart13.BeerApp.Infrastructure.HttpClients;
+using Upstart13.BeerApp.Infrastructure.Swagger;
 
 namespace Upstart13.BeerApp.Extensions
 {

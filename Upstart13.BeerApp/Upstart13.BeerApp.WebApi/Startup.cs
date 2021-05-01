@@ -1,15 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Upstart13.BeerApp.Extensions;
 
 namespace Upstart13.BeerApp.WebApi
@@ -30,7 +25,7 @@ namespace Upstart13.BeerApp.WebApi
             services.AddAndConfigureLocalization();
             services.AddAndConfigureApiVersioning();
             services.AddAndConfigurePunkApiHttpClient(Configuration);
-            services.AddAndConfigureSwagger();            
+            services.AddAndConfigureSwagger();
             services.AddDalServices(Configuration);
             services.AddControllersWithViews();
         }

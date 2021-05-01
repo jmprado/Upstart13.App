@@ -1,5 +1,4 @@
-﻿using Upstart13.BeerApp.Domain;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,6 +6,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Upstart13.BeerApp.Domain;
 
 namespace Upstart13.BeerApp.Infrastructure.Middlewares
 {
