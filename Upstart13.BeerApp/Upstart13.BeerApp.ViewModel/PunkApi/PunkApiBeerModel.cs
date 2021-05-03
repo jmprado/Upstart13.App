@@ -8,7 +8,7 @@ namespace Upstart13.BeerApp.ViewModel
     public partial class PunkApiBeerModel
     {
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -26,28 +26,28 @@ namespace Upstart13.BeerApp.ViewModel
         public Uri ImageUrl { get; set; }
 
         [JsonProperty("abv")]
-        public double Abv { get; set; }
+        public decimal Abv { get; set; }
 
         [JsonProperty("ibu")]
-        public long Ibu { get; set; }
+        public decimal? Ibu { get; set; }
 
         [JsonProperty("target_fg")]
-        public long TargetFg { get; set; }
+        public decimal? TargetFg { get; set; }
 
         [JsonProperty("target_og")]
-        public long TargetOg { get; set; }
+        public decimal? TargetOg { get; set; }
 
         [JsonProperty("ebc")]
-        public long Ebc { get; set; }
+        public decimal? Ebc { get; set; }
 
         [JsonProperty("srm")]
-        public long Srm { get; set; }
+        public decimal? Srm { get; set; }
 
         [JsonProperty("ph")]
-        public double Ph { get; set; }
+        public decimal? Ph { get; set; }
 
         [JsonProperty("attenuation_level")]
-        public long AttenuationLevel { get; set; }
+        public int AttenuationLevel { get; set; }
 
         [JsonProperty("volume")]
         public PunkApiBoilVolume Volume { get; set; }
@@ -74,7 +74,7 @@ namespace Upstart13.BeerApp.ViewModel
     public partial class PunkApiBoilVolume
     {
         [JsonProperty("value")]
-        public double Value { get; set; }
+        public decimal? Value { get; set; }
 
         [JsonProperty("unit")]
         public string Unit { get; set; }
@@ -140,7 +140,7 @@ namespace Upstart13.BeerApp.ViewModel
         public PunkApiBoilVolume Temp { get; set; }
 
         [JsonProperty("duration")]
-        public int Duration { get; set; }
+        public int? Duration { get; set; }
     }
 }
 

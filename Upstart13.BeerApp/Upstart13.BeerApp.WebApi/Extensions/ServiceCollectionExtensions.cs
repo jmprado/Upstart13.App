@@ -73,29 +73,28 @@ namespace Upstart13.BeerApp.Extensions
                 options.OperationFilter<SwaggerLanguageHeader>();
 
                 // JWT Bearer Authorization
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                options.AddSecurityDefinition("basic", new OpenApiSecurityScheme
                 {
-                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
                     Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "basic",
                     In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey
+                    Description = "Basic authorization header."
                 });
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
-            {
-                new OpenApiSecurityScheme
-                {
-                    Reference = new OpenApiReference
                     {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    },
-                    Scheme = "oauth2",
-                    Name = "Bearer",
-                    In = ParameterLocation.Header,
-                },
-                new List<string>()
-            }
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "basic"
+                            },
+                            In = ParameterLocation.Header,
+                        },
+                        new List<string>()
+                    }
                 });
 
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

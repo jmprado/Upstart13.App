@@ -12,10 +12,10 @@ namespace Upstart13.BeerApp.ViewModel
         public string ImageUrl { get; set; }
         public decimal? Abv { get; set; }
         public decimal? Ibu { get; set; }
-        public int? TargetFg { get; set; }
-        public int? TargetOg { get; set; }
-        public int? Ebc { get; set; }
-        public int? Srm { get; set; }
+        public decimal? TargetFg { get; set; }
+        public decimal? TargetOg { get; set; }
+        public decimal? Ebc { get; set; }
+        public decimal? Srm { get; set; }
         public decimal? Ph { get; set; }
         public int? AttenuationLevel { get; set; }
         public string BrewerTips { get; set; }

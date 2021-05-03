@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Mapping",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Dal", "Upstart13.BeerApp.Dal\Upstart13.BeerApp.Dal.csproj", "{68F54C23-562F-4862-865E-7F1BBEF90DC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstart13.BeerApp.ViewModel", "Upstart13.BeerApp.ViewModel\Upstart13.BeerApp.ViewModel.csproj", "{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.ViewModel", "Upstart13.BeerApp.ViewModel\Upstart13.BeerApp.ViewModel.csproj", "{7F7A9633-2A9B-4D5B-A995-2217CF6AF440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstart13.BeerApp.Domain", "Upstart13.BeerApp.Domain\Upstart13.BeerApp.Domain.csproj", "{6E948E6B-556E-47BA-8868-4FD0545C6682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upstart13.BeerApp.Domain", "Upstart13.BeerApp.Domain\Upstart13.BeerApp.Domain.csproj", "{6E948E6B-556E-47BA-8868-4FD0545C6682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstart13.BeerApp.Tests", "Upstart13.BeerApp.Tests\Upstart13.BeerApp.Tests.csproj", "{B947DB53-A4A8-499A-8A48-9DF20EC015A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E948E6B-556E-47BA-8868-4FD0545C6682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B947DB53-A4A8-499A-8A48-9DF20EC015A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B947DB53-A4A8-499A-8A48-9DF20EC015A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B947DB53-A4A8-499A-8A48-9DF20EC015A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B947DB53-A4A8-499A-8A48-9DF20EC015A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

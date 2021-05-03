@@ -17,6 +17,7 @@ namespace Upstart13.BeerApp.ViewModel
         public string TemperatureUnit { get; set; }
         public int TemperatureValue { get; set; }
         public int Duration { get; set; }
+        public string Description { get; set; }
 
         public enum MethodTypes
         {

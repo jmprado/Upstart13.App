@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Threading.Tasks;
 using Upstart13.BeerApp.Domain;
 using Upstart13.BeerApp.ViewModel;
+using Upstart13.BeerApp.WebApi.Infrastructure.BasicAuth;
 
 namespace Upstart13.BeerApp.WebApi.Controllers.v1
 {
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [BasicAuthorize("com.upstart13.beerapp.webapi")]
     public class BeerController : ControllerBase
     {
         private readonly IBeerService _beerService;
@@ -34,11 +35,11 @@ namespace Upstart13.BeerApp.WebApi.Controllers.v1
         [HttpGet("{id}", Name = "Get")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Get([FromRoute]int id)
+        public async Task<IActionResult> Get([FromRoute] int id)
         {
             var beerResult = await _beerService.Get(id);
-            
-            if(beerResult != null)            
+
+            if (beerResult != null)
                 return new OkObjectResult(beerResult);
 
             return new NotFoundObjectResult($"Beer with id #{id} not found");

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\beer-list.json" />
+    <None Remove="Data\one-beer.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\beer-list.json" />
+    <EmbeddedResource Include="Data\one-beer.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Upstart13.BeerApp.Dal\Upstart13.BeerApp.Dal.csproj" />
+    <ProjectReference Include="..\Upstart13.BeerApp.Domain\Upstart13.BeerApp.Domain.csproj" />
+    <ProjectReference Include="..\Upstart13.BeerApp.Entities\Upstart13.BeerApp.Entities.csproj" />
+    <ProjectReference Include="..\Upstart13.BeerApp.Mapping\Upstart13.BeerApp.Mapping.csproj" />
+    <ProjectReference Include="..\Upstart13.BeerApp.ViewModel\Upstart13.BeerApp.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

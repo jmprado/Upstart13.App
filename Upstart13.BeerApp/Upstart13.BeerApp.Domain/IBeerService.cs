@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Upstart13.BeerApp.ViewModel;
 
 namespace Upstart13.BeerApp.Domain
@@ -9,5 +10,6 @@ namespace Upstart13.BeerApp.Domain
         Task Delete(int id);
         Task<BeerModel> Get(int id);
         Task<BeerModel> Update(BeerModel beerModel);
+        Task Import(IEnumerable<PunkApiBeerModel> listBeerImport);
     }
 }
