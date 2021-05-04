@@ -2,10 +2,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Linq;
 using Upstart13.BeerApp.Domain;
 using Upstart13.BeerApp.Infrastructure.HttpClients;
 using Upstart13.BeerApp.ViewModel;
 using Upstart13.BeerApp.WebApi.Infrastructure.BasicAuth;
+using System.Collections.Generic;
 
 namespace Upstart13.BeerApp.WebApi.Controllers.v1
 {
@@ -30,8 +32,9 @@ namespace Upstart13.BeerApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Get([FromQuery] SearchBeerModel searchBeerModel)
         {
-            var searcResult = _mapper.Map<ResultSearchModel>(await _punkApiHttpCliente.GetBeersAsync(searchBeerModel));
-            return new OkObjectResult(searcResult);
+            var resultSearch = await _punkApiHttpCliente.GetBeersAsync(searchBeerModel);
+            var returnResult = _mapper.Map<IEnumerable<ResultSearchModel>>(resultSearch);
+            return new OkObjectResult(returnResult);
         }
 
         [HttpPost("import")]

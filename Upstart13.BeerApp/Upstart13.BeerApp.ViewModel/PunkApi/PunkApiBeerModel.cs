@@ -23,7 +23,7 @@ namespace Upstart13.BeerApp.ViewModel
         public string Description { get; set; }
 
         [JsonProperty("image_url")]
-        public Uri ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
 
         [JsonProperty("abv")]
         public decimal Abv { get; set; }
@@ -47,7 +47,7 @@ namespace Upstart13.BeerApp.ViewModel
         public decimal? Ph { get; set; }
 
         [JsonProperty("attenuation_level")]
-        public int AttenuationLevel { get; set; }
+        public decimal AttenuationLevel { get; set; }
 
         [JsonProperty("volume")]
         public PunkApiBoilVolume Volume { get; set; }

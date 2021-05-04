@@ -32,7 +32,7 @@ namespace Upstart13.BeerApp.Infrastructure.HttpClients
 
         public async Task<IEnumerable<PunkApiBeerModel>> GetBeersAsync()
         {
-            var url = $"v2/beers?page=1&per_page={_settings.ItemsPerPage}";
+            var url = $"beers?page=1&per_page={_settings.ItemsPerPage}";
             var response = await _client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
@@ -43,7 +43,7 @@ namespace Upstart13.BeerApp.Infrastructure.HttpClients
 
         public async Task<IEnumerable<PunkApiBeerModel>> GetBeersAsync(int page)
         {
-            var url = $"v2/beers?page={page}&per_page={_settings.ItemsPerPage}";
+            var url = $"beers?page={page}&per_page={_settings.ItemsPerPage}";
             var response = await _client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
@@ -54,7 +54,7 @@ namespace Upstart13.BeerApp.Infrastructure.HttpClients
 
         public async Task<IEnumerable<PunkApiBeerModel>> GetBeersAsync(int page, int itemsPerPage)
         {
-            var url = $"v2/beers?page={page}&per_page={itemsPerPage}";
+            var url = $"beers?page={page}&per_page={itemsPerPage}";
             var response = await _client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();

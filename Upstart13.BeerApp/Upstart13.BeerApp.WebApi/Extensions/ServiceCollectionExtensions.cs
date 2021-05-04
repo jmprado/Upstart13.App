@@ -108,7 +108,7 @@ namespace Upstart13.BeerApp.Extensions
         public static IServiceCollection AddAndConfigurePunkApiHttpClient(this IServiceCollection services, IConfiguration configuration)
         {
             var punkApiSettings = new PunkApiSettings();
-            configuration.GetSection("WeatherSettings").Bind(punkApiSettings);
+            configuration.GetSection("PunkApiSettings").Bind(punkApiSettings);
             services.AddSingleton(punkApiSettings);
 
             var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(10);
