@@ -21,7 +21,7 @@ namespace Upstart13.BeerApp.ViewModel
         public string BrewerTips { get; set; }
         public string ContributedBy { get; set; }
 
-        public IEnumerable<FoodPairingModel> FoodPairing { get; set; }
+        public IEnumerable<FoodPairingModel> ListFoodPairing { get; set; }
         public IEnumerable<IngredientModel> Ingredient { get; set; }
         public IEnumerable<MethodModel> Method { get; set; }
         public IEnumerable<VolumeModel> Volume { get; set; }

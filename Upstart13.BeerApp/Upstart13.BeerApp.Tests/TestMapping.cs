@@ -46,7 +46,7 @@ namespace Upstart13.BeerApp.Tests
         public void TestMappingPunkApiFoodPairingToFoodPairingEntity(int value)
         {
             var beerEntity = _mapper.Map<Beer>(_beerModel);
-            Assert.Equal(value, beerEntity.FoodPairing.Count());
+            Assert.Equal(value, beerEntity.ListFoodPairing.Count());
         }
 
         [Theory]

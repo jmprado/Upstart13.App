@@ -10,7 +10,7 @@ namespace Upstart13.BeerApp.Entities
     {
         public Beer()
         {
-            FoodPairing = new HashSet<FoodPairing>();
+            ListFoodPairing = new HashSet<FoodPairing>();
             Ingredient = new HashSet<Ingredient>();
             Method = new HashSet<Method>();
             Volume = new HashSet<Volume>();
@@ -33,7 +33,7 @@ namespace Upstart13.BeerApp.Entities
         public string BrewerTips { get; set; }
         public string ContributedBy { get; set; }
 
-        public virtual ICollection<FoodPairing> FoodPairing { get; set; }
+        public virtual ICollection<FoodPairing> ListFoodPairing { get; set; }
         public virtual ICollection<Ingredient> Ingredient { get; set; }
         public virtual ICollection<Method> Method { get; set; }
         public virtual ICollection<Volume> Volume { get; set; }

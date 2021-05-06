@@ -107,7 +107,7 @@ namespace Upstart13.BeerApp.Entities
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.Beer)
-                    .WithMany(p => p.FoodPairing)
+                    .WithMany(p => p.ListFoodPairing)
                     .HasForeignKey(d => d.BeerId)
                     .HasConstraintName("FK_FOODPAIR_REFERENCE_BEER");
             });
